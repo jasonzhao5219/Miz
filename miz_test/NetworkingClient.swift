@@ -46,7 +46,7 @@ class NetworkingClient {
 //                 }
 //            print ("give me category?: \(self.resultCategory   )")
             
-          
+ 
         }
         print("give me downcast value: \(self.DownCastedValue[0])")
        
