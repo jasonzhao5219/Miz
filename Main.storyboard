@@ -131,17 +131,17 @@
                     <navigationItem key="navigationItem" id="7Wa-He-tXx"/>
                     <connections>
                         <outlet property="ExploreCollectionView" destination="lCk-VO-NX5" id="4Rn-a0-sOZ"/>
-                        <segue destination="eXB-mQ-asv" kind="presentation" id="ylw-kJ-DlW"/>
+                        <segue destination="eXB-mQ-asv" kind="presentation" identifier="ItemSegue" customClass="ScaleSegue" customModule="miz_test" customModuleProvider="target" id="ylw-kJ-DlW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bM6-yp-qJH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="850.72463768115949" y="-623.4375"/>
         </scene>
-        <!--View Controller-->
+        <!--Full View Controller-->
         <scene sceneID="zUk-xE-eTv">
             <objects>
-                <viewController id="eXB-mQ-asv" sceneMemberID="viewController">
+                <viewController id="eXB-mQ-asv" customClass="FullViewController" customModule="miz_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MBl-Om-FZD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -154,10 +154,17 @@
                                     <action selector="BackBtnPressed:" destination="eXB-mQ-asv" eventType="touchUpInside" id="3el-Hi-VXw"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rLe-OC-eVn">
+                                <rect key="frame" x="20" y="99" width="374" height="448"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="HF1-3j-8tj"/>
                     </view>
+                    <connections>
+                        <outlet property="BigImage" destination="rLe-OC-eVn" id="FbQ-ln-sx0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Iy-6p-B82" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
